@@ -1,8 +1,29 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffec42" height="410.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="6.0" width="143.0" />
+        <Button fx:id="BotonIf" layoutX="5.0" layoutY="55.0" mnemonicParsing="false" onAction="#ejemploIf" prefHeight="66.0" prefWidth="132.0" style="-fx-background-radius: 0; -fx-border-color: black;" text="Ejemplo: If" />
+        <Button fx:id="BotonElse" layoutX="5.0" layoutY="120.0" mnemonicParsing="false" onAction="#ejemploElse" prefHeight="66.0" prefWidth="132.0" style="-fx-background-radius: 0; -fx-border-color: black;" text="Ejemplo: Else" />
+        <Button fx:id="BotonSwitch" layoutX="5.0" layoutY="185.0" mnemonicParsing="false" onAction="#ejemploSwitch" prefHeight="66.0" prefWidth="132.0" style="-fx-background-radius: 0; -fx-border-color: black;" text="Ejemplo: Switch" />
+        <Button fx:id="botonVar" layoutX="5.0" layoutY="250.0" mnemonicParsing="false" onAction="#ejemploVar" prefHeight="66.0" prefWidth="132.0" style="-fx-background-radius: 0; -fx-border-color: BLACK;" text="Ejemplo: Var" />
+        <Label layoutX="154.0" layoutY="55.0" prefHeight="27.0" prefWidth="442.0" text="Ejemplificador" />
+        <TextArea fx:id="cajaEjemplificador" layoutX="154.0" layoutY="80.0" prefHeight="167.0" prefWidth="442.0" />
+        <Label layoutX="154.0" layoutY="252.0" prefHeight="27.0" prefWidth="324.0" text="Comprobador" />
+        <Button fx:id="botonRun" layoutX="520.0" layoutY="253.0" mnemonicParsing="false" onAction="#correrCodigo" prefHeight="15.0" prefWidth="75.0" style="-fx-background-radius: 30; -fx-background-color: #20F540;" text="Run" />
+        <TextArea fx:id="cajaComprobador" layoutX="154.0" layoutY="285.0" prefHeight="167.0" prefWidth="442.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffec42" height="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="600.0" />
+        <Label layoutX="208.0" layoutY="-1.0" prefHeight="54.0" prefWidth="184.0" text="Formal-Vault">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
